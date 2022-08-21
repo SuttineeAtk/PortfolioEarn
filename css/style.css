@@ -27,6 +27,7 @@ body {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 section {
@@ -264,7 +265,7 @@ header {
     font-size: 2rem;
     line-height: 2.6rem;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 1.5rem 0 2.5rem 0;
 }
 
 /* vvvvvvv Button vvvvvvvv */
@@ -356,7 +357,7 @@ header {
 .about-text p {
     font-size: 0.938rem;
     letter-spacing: 1px;
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
 }
 
 /* Education & Certificate */
@@ -498,6 +499,11 @@ header {
     background: var(--main-color);
     color: var(--bg-color);
     border-radius: 4px;
+    /* Add more style */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* list-style: none; */
 }
 
 .project-overlay.bx:hover {
@@ -509,6 +515,33 @@ header {
     top: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.blog-tags ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .blog-tags li + li {
+    margin-left: .5rem;
+  }
+  .blog-tags a {
+    font-size: .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+  }
+
+  .project-overlay p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 
 /* Contact Form*/
 .contact-form {
@@ -573,7 +606,8 @@ header {
     transition: 0.3s;
 }
 
-/* Making Responsive */
+/* ----- Responsive ----- */
+
 @media (max-width:990px) {
     .container {
         margin: 0 auto;
@@ -676,4 +710,8 @@ header {
     .heading {
         font-size: 3rem;
     }
+    .project-content{
+        grid-template-columns: 1fr;
+    }
+    /* เพิ่ม css overlay ด้วย */
 }

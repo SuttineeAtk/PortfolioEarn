@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: #ff7582
 }
 
 .swiper {
@@ -227,7 +227,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    color: #ff7582;
 }
 
 .swiper-button-next.swiper-button-disabled,
