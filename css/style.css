@@ -389,7 +389,7 @@ header {
 .education-box h2 {
     font-size: 1.1rem;
     line-height: 1.3rem;
-    /*color: var(--main-color); สี */ 
+    /*color: var(--main-color); สี */
     font-weight: 600;
 }
 
@@ -512,11 +512,13 @@ header {
     list-style: none;
     padding-left: 0;
     justify-content: center;
-  }
-  .blog-tags li + li {
+}
+
+.blog-tags li+li {
     margin-left: .5rem;
-  }
-  .blog-tags a {
+}
+
+.blog-tags a {
     font-size: .75rem;
     height: 1.5rem;
     line-height: 1.5rem;
@@ -525,12 +527,12 @@ header {
     text-transform: uppercase;
     white-space: nowrap;
     width: 5rem;
-  }
+}
 
-  .project-overlay p {
+.project-overlay p {
     margin-top: 1rem;
     font-size: 1rem;
-  }
+}
 
 /* Contact Form*/
 .contact-form {
@@ -576,6 +578,7 @@ header {
     row-gap: 1.5rem;
     padding: 30px 0;
 }
+
 .footer-content ul {
     display: flex;
     flex-direction: row;
@@ -583,11 +586,13 @@ header {
     list-style: none;
     padding-left: 0;
     justify-content: center;
-  }
-  .footer-content li + li {
+}
+
+.footer-content li+li {
     margin-left: 1.5rem;
-  }
-  .footer-content a {
+}
+
+.footer-content a {
     color: var(--main-color);
     font-size: .75rem;
     height: 1.5rem;
@@ -596,7 +601,7 @@ header {
     text-align: center;
     white-space: nowrap;
     width: 5rem;
-  }
+}
 
 /* Scroll Top */
 .scroll-top {
@@ -644,6 +649,7 @@ header {
     .heading {
         font-size: 4rem;
     }
+
     .skills-content {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -721,14 +727,17 @@ header {
 }
 
 @media (max-width:635px) {
-    .about-content{
+    .about-content {
         grid-template-columns: 1fr;
     }
+
     .heading {
         font-size: 3rem;
     }
-    .project-content{
+
+    .project-content {
         grid-template-columns: 1fr;
     }
+
     /* เพิ่ม css overlay ด้วย */
 }
